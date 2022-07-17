@@ -1,0 +1,2481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A variable</title>
+  </head>
+  <body>
+    <h1>A variable</h1>
+
+    <script>
+            /*
+              let message='Hello';
+              // alert(message);
+
+              let user = 'jatin', age= 20, nice= 'hey';
+
+              let hey = 'HEllo'
+              let by = hey;
+              // alert(by);
+
+               // task
+
+               let name = 'jhon';
+               let admin= name;
+               //alert(admin);
+
+               let earth = 'Hello ';
+               let current_user= 'Hi';
+
+               */
+
+            //======================Data Type==================
+
+            /*
+                 let name = 'jhon'
+               // alert(`HeLLo ${name}  HoW ArE YoU`)
+               alert(` hey ${name} do you know if use add 1 in 2 the anser comes is =:  ${1+2}`)
+
+
+
+               //  Boolean
+               let myAge= true;
+               let yourAge= false;
+
+               let sumOfBoolean = (4>1);
+               alert(sumOfBoolean);
+
+
+               let name = prompt(`enter Your Name`, `guest`);
+               let ya =   confirm ( name ) ;
+               {
+                if (ya) {
+                      console.log(alert(`nice name`));
+                } else {
+                      console.log(alert(`please Enter Your Name Before Anything`));
+                }
+               }
+                console.log(name);
+                console.log(ya);
+
+
+                let name = Boolean(`jatin`);
+                console.log(typeof name);
+
+
+                let num = `123`
+                console.log(typeof num);
+                let sum = Number(num);
+                console.log(sum);
+
+
+                console.log(Number(`     123     `), " removes emty space");
+                console.log(Number(`123z`), ` can not read number becous of Z `);
+                console.log(Number(true), ` == Turue `);
+               console.log(Number(false), `  == False  `);
+
+
+                console.log(Boolean(1), ` == 1`);
+                console.log(Boolean(0), ` == 0`);
+
+                console.log(Boolean(`smothing`), '  ==  smothiung');
+                console.log(Boolean(``), '  ==  emty');
+
+                // in JaVa Script A non-emty ("  ") or ("0") ==  Srting is always True.
+
+                console.log(Boolean("  "), " emty space stil takes speace in thats why this is true ");
+                console.log(Boolean(" 0 "), " 0 in string  whith type converston with Boolean also is true  ");
+
+
+
+
+               let x = 1 , y = 3, a= -1, b= +3;
+                console.log((a-b), ` == the sum was ( x = 1 , y = 3, a= (x==(-1)), b= (y==(+3) )`);
+
+               // Remainder = % is a opretore
+
+               let A =  (5 % 2), B = (10 % 5); console.log(A); console.log(B);
+
+
+
+               // Exponentiation **
+
+               let a = (2 ** 2) , b = (2 ** 4);
+               console.log(a, ` ==  2**2  ` ); console.log(b, `= 2 ** 4 `);
+
+               console.log(( 4 ** (1/2) ), `== 2 (power of 1/2 is the same as a square root)`);
+                 console.log(( 8 ** (1/3) ), `==  2 (power of 1/3 is the same as a cubic root)`);
+
+
+               let apple = "5";
+                 et orreng = "10";
+               console.log(+apple + +orreng);
+               // short hand for the console.log (Number(apple) + Number(orreng)).
+
+               let x = ((1+3) * 4 );
+               console.log(x);
+
+
+
+                let a = 1;
+                let b = 3;
+                let c = 10 - (a = (b + (a)))
+                console.log(a);
+                console.log(c);
+
+                //  Chaining assignments
+
+                // let a = b = c = (3 + 3);
+               // console.log(`a ==`,(a), `b ==`,(b) , `c ==`,(c));
+               //or simpler
+                let c = (3 + 3); // first this counts
+                let b = c;  // this this happnes
+                let a = b;  // then this happens
+
+                console.log(`c ==`,(c));
+                console.log(`b ==`,(a));
+                console.log(`a ==`,(b));
+
+
+                let accessAllowed;
+                et age = prompt("how old are you? ", "18");
+
+                if (age>18) {
+                accessAllowed= true;
+                }
+                else if(age < 18){
+                accessAllowed= false;
+                }
+                else {
+                 accessAllowed= true;
+                };
+                alert(accessAllowed);
+
+                  //  short form
+
+                  //let x = prompt("whhat is your age", "18"); ( x >=18 )? alert(true) :   alert(false);
+
+                  let y = prompt('your age ', "1");
+                  let message = (y<3) ? alert("Hi! Baby") : (y<20) ? alert("Hello!"): (y<100) ? alert("too old"): alert("FBI Alean's");
+
+                  message = "age is "+ y ;
+                 // console.log(message);
+                 document.write(message)
+
+
+                 //let who = prompt("who created JS", " ? ");
+                 //(who == "Net")? alert("true!") : alert("False!");
+
+                 let A = prompt("What is the 'official' name of JavaScript?", "E....c.... ");
+                let Y =  (A == "ECMAScript")? alert(true):
+                 (A == "ecmascript")? alert(true):
+                 alert("You don't know? ECMAScript!");
+                 P = "Real name is :=" + "ECMAScript!     ";
+                 Y = " " + A;
+                 U = "your name is := " + Y + "   ";
+                 document.write(U)
+                 document.write(P);
+
+
+
+                 //let nun = prompt("type a number between 0 to 1 " , " 0 ");
+                // let you = (nun > 0)? alert(1): (nun < 0) ? alert(-1) : (nun == 0) ? alert(0): alert("bigger then 2");
+
+                let a = prompt("give a number to A", " ")
+                 let b = prompt("give a number to B", " ")
+                  let result ;
+
+                  let HO = ((a + b) < 4) ? alert(result = 'Below') : alert(result = 'Over');
+                  HO ="your Answer was   " +  a + "+" + b  + "=" + result ;
+                  document.write(HO);
+
+                  let login = prompt("your name ? from this two ", "Employ / Director");
+
+                  let message ;
+
+                  (login== "Employ")?  message = ""+(alert("Hello!" + login)) :
+                  (login== "Director")?  message = ""+(alert("Greetings!" + login)) :
+                  (login== "")?  message = ""+(alert("No login" + login)) :
+                  message = (alert(""));
+
+                  P = "your   " + login;
+                  document.write(P);
+                  console.log(P);
+
+
+                  let age = prompt("your age ? " , "18")
+                 if (age>= 14 && age<=90) {
+                             console.log("gig thewsn 14");
+                  } ;
+                  let age = prompt("your age ? " , "11")
+                if ( (age>90 ) || (age < 14) ) {
+                             console.log("gig thewsn 14");
+                  } ;
+                 let age2 = prompt("your age ? " , "11")
+               if  ( ((!(age2<90 && age2>14))) ) {
+                            console.log("gig thewsn 14");
+                 }
+
+
+                  //LOGIN
+
+                  let login = prompt("User Name?", "");
+                  if(login == "Admin"){
+                    let pas = prompt("enter password","");
+                         if (pas=="") {
+                              alert("Login Canceled")
+                         }
+                         else if(pas == ""){
+                          alert("i dont know you ")
+                         }
+
+                         else if (pas=="TheMaster"){
+                                alert("Welcome")
+                         }
+                         else if(!pas){
+                          alert("Re-Enter-PassWord")
+                         }
+                        else{
+                          alert("Inccorect PassWord")
+                        }
+                  }
+                  else{
+                      alert("Error")
+                  }
+
+                    console.log(login);
+
+
+                let user;
+                alert(user ?? "anonimus");
+
+                let yser = "jatin"
+                alert (yser ?? "no one");
+
+
+                let name =prompt("what is your name?", "");
+                let lastName= prompt('what is your LastName?', '')
+                let nikeName = prompt("what is your nikeName?", "")
+
+                if((name ?? lastName) || nikeName){
+                  // alert(name +"  "+ lastName +"  "+ nikeName)
+
+
+                          console.log(name + lastName + nikeName)
+                          if (console.log) {
+                           alert(name + lastName + nikeName);
+                           } ;
+                }
+                else{
+                  alert("who ?")
+                  console.log("who ?");
+                }
+
+
+
+                  let name =prompt("what is your name?", "");
+                let lastName= prompt('what is your LastName?', '')
+                let nikeName = prompt("what is your nikeName?", "")
+
+                alert(name ?? lastName ?? nikeName ?? "whp?")
+
+
+               let height = null;
+               let width = null;
+               let area = (height ?? 100)*(width ?? 50);
+               alert(area)
+
+
+
+              let name = prompt("Asign A Name To The Ai ", "jarvis");
+              let age = prompt("agign birth date to " + name , "2002");
+              let newA = ((new Date().getFullYear() ) - age);
+              alert("hi I am     " + name + "       and my Age is    " + newA +  "     nice TO Meet You")
+
+
+             let i = 0;
+             while (i<3) {
+              alert(i)
+                  i++;
+             }
+
+             let w = 1;
+             while(w<25) console.log(w++);
+
+
+             let i = 0;
+              do {
+               i++
+               console.log(i);
+              } while (i<10);
+
+              let i = 0;
+              for (; i< 3; i++) {
+                console.log(i);
+
+              }
+              let i = 0;
+              for (; i < 3;) {
+                console.log(i++);
+
+              }
+
+
+              let sum = 0;
+
+                 while (true) {
+
+                   let value = +prompt("Enter a number", '');
+
+                   if (!value) break; // (*)
+
+                   sum += value;
+
+                 }
+                 alert( 'Sum: ' + sum );
+
+
+
+                let i = 0 ;
+                while (true) {
+                       let value = +prompt("Enter a number", '');
+                       if (!value) {
+                       break;
+                       }
+                       sum += value;
+                }
+                alert("sum:"+  sum)
+
+                 let i = 0;
+                 for (let i = 0; i < 10; i++) {
+
+                  if(i % 2 == 0)continue;
+                 console.log(i);
+
+                 }
+
+                  let A = 0;
+                  for (let A = 0; A < 10; A++) {
+                      if (A % 2 ) {
+
+                        console.log(A);
+                      };
+
+                  }
+
+
+                     puter: for (let i = 0; i <10; i++) {
+                        for (let j = 0; j <10; j++) {
+                          let input = prompt(`heylo how are you  (${i},${j})` , "")
+                          if (!input) {
+                                break puter;
+                          }
+                        }
+
+                      }
+                      alert("Done")
+
+
+
+
+                      Outer: for (let i = 0; i <10; i++) {
+
+                             for (let k = 0; k <10; k++) {
+
+                                   let input= +prompt(`NIce To Meet You !(${i},${k})`,"")
+                                   if (!input) {
+                                    break Outer;
+                                   }
+                             }
+                      }
+
+
+                        alert("Thneks For Supports")
+                        //for (let i = 0; i < 5; i++) console.log( i );
+
+                        let i = 0 ;
+                        for (let i = 0; i < 10; i++) {
+
+                                if (i % 2 == 0) {
+                                  console.log(i);
+                                }
+                              }
+
+
+               for (let i = 0; i < 3; i++) {
+               alert( `number ${i}!` );
+          }
+
+
+          let A = 0;
+             while (A<3) {
+               console.log(`number ${A}!`)
+               A++;
+             }
+
+
+            // let num;
+
+            // do {
+            //   num = prompt("Enter a number greater than 100?", 0);
+            // } while (num <= 100 && num);
+
+           let num ;
+           do {
+               num = prompt('Enter a number grater then 100!', 0);
+           } while (num <= 100 && num);
+
+           let num2 ;
+            do {
+              num2 = prompt("Enter a number grater then 100!', 0")
+            } while (num2<=100 && num2);
+
+
+
+           let a = 2 + 2;
+           switch (a) {
+            case 2:
+                  alert("value is 2")
+              break;
+             case 3 :
+             alert("value is 3")
+              break;
+             case 4 :
+             alert("value is 4")
+              break;
+             case 5 :
+             alert("value is 5")
+              break;
+
+            default:
+            alert("i Dont Know The Value")
+              break;
+           }
+
+          let a = "1";
+          let b = 0;
+          switch (+a) {
+            case b+1:
+            alert("this runs, because +a is 1, exactly equals b+1");
+              break;
+
+            default:
+            alert("this doesn't run");
+              break;
+          }
+
+
+           let a = 3;
+           switch (a) {
+            case 4:
+            alert('Right!');
+              break;
+            case 3:
+            case 5 :
+            alert('Wrong!');
+          alert("Why don't you take a math class?");
+              break;
+
+            default:
+            alert('The result is strange. Really.');
+              break;
+           }
+
+                let a = prompt("give number beetein 0 and 3", 0);
+                switch (a) {
+                  case "0":
+                  case "1":
+                  alert( 'One or zero' );
+                    break;
+
+                  case '2':
+                  alert( 'two' );
+                    break;
+
+                  case 3:
+                  alert( 'Never executes!' );
+                    break;
+
+                  default:
+                  alert( 'An unknown value' );
+                    break;
+                }
+
+
+                  let a = prompt("give browser", "");
+
+                  if (a=="Edge") {
+                    alert( "You've got the Edge!" );
+                  } else if(a == 'Chrome'|| 'Firefox'|| 'Safari'|| 'Opera'){
+                    alert( 'Okay we support these browsers too' );
+                  }
+                  else{
+                    alert( 'We hope that this page looks ok!' );
+                  }
+
+
+
+                  let a = +prompt('a?', '');
+               switch (a) {
+                case 0:
+                       alert( 0 );
+                  break;
+
+                case 1:
+                       alert( 1 );
+                  break;
+
+                case 2:
+                case 3:
+                       alert( '2,3' );
+                  break;
+
+                default:
+                      alert("no Anser")
+                  break;
+               }
+
+               function checkAge(Age) {
+                if (Age>=18) {
+                  return true;
+
+                }
+                else  if(!Age) {
+                  alert( 'Access denied' );
+                 }
+                else {
+                  return confirm('Do you have permission from your parents?');
+                }
+               }
+               let Age = prompt("how old are you ", 18);
+               if (checkAge(Age)) {
+                 alert( 'Access granted' );
+                   }
+                   function checkAge(age) {
+
+                     return(  (age>18) ? true: confirm('Did parents allow you?')  );
+                    }
+                    checkAge();
+
+
+
+                function checkAge(age) {
+                  let a = age=(+prompt("age>",12))
+                 return(  (a>18) || confirm('Did parents allow you?')  );
+                }
+                checkAge();
+                function MinValue(a,b) {
+                  if (a<b) {
+                    alert(a)
+                  } else if (b<a){
+                    alert(b)
+                  }
+                  else{alert("both are equl")}
+                }
+                let sum = MinValue(4,1)
+
+
+
+                function MinValue(a,b) {
+                 let q = a=(+prompt("give a number witch you want to multiplay", 0));
+                 let w = b =(+prompt("give a number witch you want to be multiplayed", 0));
+                let A = a**b;
+                 return( alert(A));
+
+              }
+              MinValue();
+
+              let sum = (a,b)=>  a+b;
+              console.log( a = sum(5,5));
+
+              let sum = (a)=>  a*5;
+              console.log( a = sum(5));
+
+              let Hi = ()=> alert("Hellow");
+              Hi();
+
+              let age = +prompt("what is yout age ", 19)
+              let a = (age<18)? ()=> alert("hello") : ()=> alert("Greetngs");
+              a();
+
+
+              let sum = (a,b)=>{
+                let A = a+b;
+                return A;
+              }
+
+              let H = sum(5,10);
+              alert(H)
+
+
+              let OU = (question, yes, no)
+
+
+
+
+              let hos = OU("shoud we kill him ?", )
+              let Q = prompt("Do You Agree?", "")
+              let Y =   alert("You agreed.");
+              let N =  alert("You canceled the execution.");
+
+
+
+                 ask= (question, yes, no) => {
+                   (confirm(question))? yes() : no();
+                  }
+
+                  ask( "Do you agree?" ,  ()=> { alert("You agreed."); } , ()=> { alert("You canceled the execution.") ; } );
+
+
+                  A = (text) => {
+
+                    let B = text.toUpperCase ();
+                     alert(B);
+
+
+
+
+               }
+               A( prompt("gice text wqe will trnaslate it to upper case"))
+
+               function ask(Q,Y,N) {
+                 if(confirm(Q)) {Y()}
+                   else {
+                    N()
+                  };
+
+                }
+
+               function showok() {
+                alert('you agred')
+               }
+               function showcansel() {
+                 alert("your canseled")
+                }
+                ask("do you agreed",showok, showcansel)
+
+
+                sayhi("jatin");
+
+                function sayhi(name) {
+                  console.log(`hellow ${name}`);
+                }   // this works
+
+                say("jatin");
+               let say = function (name) {
+                 console.log(`hellow ${name}`);
+                }
+
+
+                let name = prompt("what is yopur name ?","Guest");
+                function yes() {
+                  (name)? alert("Hi!"+"  "+ name):alert("fuq you" +"  "+ "Guest")
+
+                }
+                yes();
+
+                arr = ['fruit', 'vegetable', 'furniture']
+                arr.forEach(function(element, index, array){
+                  console.log(element, index);
+                });
+
+
+                arr = ['one', 'two', 'three']
+               arr.forEach(function (element, index, array) {
+                    console.log(element, index);
+                  });
+
+
+                  let naem = (
+                  prompt("What Name ","")
+                )
+                he:function yup() {
+                  (naem)? confirm(naem) : (confirm("are you sure to not give a name?"))? alert(ok) : prompt( "What Name ","");
+                   }
+                yup();
+              console.log(yup());
+
+              let ask = (question, yes, no) => (confirm(question))? yes(): no()
+
+
+              ask(
+                "Do you agree?",
+                ()=> { alert("You agreed."); },
+                () =>{ alert("You canceled the execution."); }
+                );
+
+
+                   // Objects;
+
+                   let user ={
+                        name: "jatin",
+                        age : 30,
+                        "name with specis" : "lolJaar",
+                   }
+                      let smothing = prompt("enter a name " , "name");
+                      alert(user[smothing])
+
+
+
+                      let user2 = {
+                        name: "Jatin",
+                        age: 20,
+                        "smo thing": "Lol_Jaar",
+                      }
+
+                      let smohting2 = prompt("enter \"name\" \"age\" \"smo thing\" ", "");
+                      alert(user2[smohting2]);
+
+
+                      let fruit = prompt("what fruit\'s", "apple")
+                      let bag = {
+                        [fruit]: 5,
+                      }
+                      alert(bag.apple);
+
+
+
+                      //or
+
+                      let fruit = prompt("what fruit\'s", "apple")
+                     let bag ={}
+                      bag[fruit]=5;
+                      alert(bag.apple)
+
+
+                      //or
+
+                       let fruit=prompt("what fruits\'", "apple")
+                       let bag = {
+                          [fruit+"smothing"]: 5,
+                       }
+                      alert(bag[fruit+"smothing"])
+
+
+
+                      // Dont Know Why This Not Work
+                      function makeUser(Name, Age) {
+                            return{
+                              name : Name,
+                              age : Age,
+                            };
+
+                      }
+
+                      let smothing = makeUser(prompt("give a name ", "ad"), +prompt("give a age", 0));
+                      alert(smothing.Name);
+                      console.log(smothing .Name);
+
+
+                      // for in loop
+
+                      let user = {
+                         name : "jatin",
+                         age:"32",
+                         isAdmin: true,
+                      }
+                    console.log(user);
+                       for (let  key in user) {
+
+                            alert(key) ; console.log(key);
+                            alert(user[key]); console.log(user[key]);
+                          }
+
+
+                          let user = {}
+                          user.name="jhon";
+                          user.surname="smith";
+                          user.name="pate";
+                          delete user.name;
+                          console.log(user);
+
+
+                          function isEmpty(obj) {
+                            for (let key in obj) {
+                              return false;
+                            }
+                            return true;
+                          }
+                          console.log( isEmpty());
+
+
+                          let salaries = {
+                            John: 100,
+                            Ann: 160,
+                            Pete: 130
+                          }
+                          let sum = 0;
+                          for (let key in salaries) {
+                              if (salaries[key]) {
+                                          sum += salaries[key];
+
+                                          console.log(sum);
+                              } else {
+                                console.log("nothing");
+                              }
+                            }
+                            console.log(sum);
+
+                            // or
+
+                            let salaries = {
+                              John: 100,
+                              Ann: 160,
+                            Pete: 130
+                          }
+                          let sum = 0;
+                          for (let key in salaries) {
+                               sum += salaries[key];
+                               console.log(sum);
+                              }
+                              console.log(sum);
+
+
+                              let menu = {
+                                 width: 200,
+                                 height: 300,
+                                 title: "My menu"
+                               };
+                            function multiplyNumeric(obj) {
+                              for (let  key in menu) {
+                                if(typeof menu[key]== "Number")
+                                {
+                                  console.log( menu[key] *=2 );
+
+                                }
+                              }
+                            }
+                            console.log( multiplyNumeric(menu) );
+                            console.log(menu);
+
+
+                            let user = {
+                              name : "kjatin",
+                                age: 34,
+                              }
+
+                             let clone = {}
+                              for (let key in user) {
+
+                                     clone[key]==user[key];
+                                }
+                                clone.name="Lol"
+                              console.log(clone);
+                              console.log(user);
+
+
+
+                              let user = { name: "John" };
+
+                                  let permissions1 = { canView: true };
+                                  let permissions2 = { canEdit: true };
+
+                              Object.assign(user,[permissions1, permissions2]);
+                              console.log(user);
+
+
+
+                              let user= {
+                                name: "jatin",
+
+                              }
+
+                              Object.assign(user,{name: ";loljaer"});
+                              console.log(user);
+
+
+                              let user= {
+                                name: "jatin",
+
+                              }
+
+                             let clone=  Object.assign({},[user]);
+                              console.log(clone);
+
+
+                              let user = {
+                                name: "John",
+                                sizes: {
+                                  height: 182,
+                                  width: 50
+                                }
+                              };
+                              console.log(( user.sizes.height ));
+
+
+
+                              let user = {
+                                name: "John",
+                                sizes: {
+                                  height: 182,
+                                  width: 50
+                                }
+                              };
+
+                              let clone = Object.assign({}, [user])   ;
+                           clone.sizes === user.sizes;
+                           user.sizes.height++;
+                           user.sizes.width++;
+                           console.log(clone);
+
+
+
+
+              // Write a function named tellFortune that:
+                 //  takes 4 arguments: number of children, partner's name, geographic location, job title.
+                 //  outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
+                  // Call that function 3 times with 3 different values for the arguments.
+
+
+                          let NC = [1,2,3,4,5];
+                          let PN = ["rina", "shima", "loli", "faka", "zoya"];
+                          let GL = ["indian", "american", "african", "chainan", "japann"];
+                          let JT = ["criceter", "football", "salesman", "treder", "perfesnol"];
+
+                          function fortune () {
+                            let one =  JT[((Math.random()*JT.length)) | 0];
+                            let two =  GL[((Math.random()*GL.length)) | 0];
+                            let three = "you marry " + (PN[((Math.random()*PN.length)) | 0]);
+                            let four = "with kids " +(NC[((Math.random()*NC.length)) | 0]);
+
+                            console.log(one +"  "+ two +"  "+ three +"  "+ four);
+                          }
+                          console.log(NC, PN, GL, JT);
+
+                          let ask = confirm("Do You Wish To Know Your Furtune?", "") ;
+                          if (ask) {
+                             alert(fortune());
+                          }
+
+                          */
+
+            // Write a function named calculateDogAge that:
+            //takes 1 argument: your puppy's age.
+            //calculates your dog's age based on the conversion rate of 1 human year to 7 dog years.
+            //outputs the result to the screen like so: "Your doggie is NN years old in dog years!"
+            //Call the function three times with different sets of values.
+            //Bonus: Add an additional argument to the function that takes the conversion rate of human to dog years.
+
+            /*
+            let PA = +prompt("What Is Your Puppys Age In Doggy Year", 0);
+
+              function AgeC() {
+                let AN = PA * 7;
+                 console.log(AN);
+                if (PA) {
+                  alert( "Your Doggy Is "+"  "+AN+ "  "+"Years Old In Doggy Years ");
+                }
+              }
+              AgeC()
+
+                 */
+
+            // Bonus
+            /*
+                 let PA = +prompt("What Is Your Puppys Age In Human Year", 0);
+
+              function AgeC() {
+                let AN = PA / 7;
+                 console.log(AN);
+                if (PA) {
+                  alert( "Your Doggy Is "+"  "+AN+ "  "+"Years Old In Human Years ");
+                }
+              }
+              AgeC()
+
+               */
+
+            //Write a function named calculateSupply that:
+            //takes 2 arguments: age, amount per day.
+            //calculates the amount consumed for rest of the life (based on a constant max age).
+            //outputs the result to the screen like so: "You will need NN to last you until the ripe old age of X"
+            //Call that function three times, passing in different values each time.
+            //Bonus: Accept floating point values for amount per day, and round the result to a round number.
+
+            /*
+               let A = +prompt("What is your Max Expected age ?", 0) ;
+               let C =  +prompt("What is your Caleri Intake In A day ?", 0);
+
+               let AC = ("You will need  this much Caleri Intake  ")+((Math.round(C))*(365)*(A))+("  to last you until the ripe old age of"+ " "+ A)
+              alert(AC)
+                 */
+
+            //   Object methods, "this"
+            /*
+              let user = {
+                name :"Jhon",
+                age: 30,
+              }
+
+              let user = {
+                name :"Jhon",
+                age: 30,
+              }
+              user.sayHi= ()=>{
+                alert("Hello");
+              }
+              user.sayHi();
+
+
+
+              let user = {
+
+              }
+
+                function sayHi(){
+                alert("Hello");
+              }
+              user.sayHi = sayHi;
+              user.sayHi();
+
+
+
+
+
+              let user = {
+                sayHi:  function (){
+                             alert("Hello");
+                            }
+                };
+                   //or
+                   let user2 = {
+                     sayHi(){
+                             alert("Hello");
+                            }
+                          };
+
+
+
+
+
+                      //“this” in methods
+
+                      let user = {
+                       name :"Jhon",
+                           age: 30,
+                           sayHi(){
+                             alert(this.name);
+                            }
+                          }
+
+                          user.sayHi();
+
+                          // we can shoud not use object name instad of(  this )becouse if we change the object
+                         // name or copy the object with other we will get problems so use this instad of object
+                         // name got it!
+
+                         let user = { name: "John" };
+                         let admin = { name: "Admin" };
+
+                         function sayHi() {
+                           alert( this.name );
+                         }
+
+                         // use the same function in two objects
+                         user.f = sayHi;
+                         admin.f = sayHi;
+
+                         // these calls have different this
+                         // "this" inside the function is the object "before the dot"
+                         user.f(); // John  (this == user)
+                         admin.f(); // Admin  (this == admin)
+
+                         admin['f'](); // Admin (dot or square brackets access the method – doesn't matter)
+
+
+
+                         let user= {
+                            FirstName: "Jatin",
+                            sayHi(){
+                              let Arrow = ()=>
+                                alert(this.FirstName);
+                                Arrow();
+
+                            }
+                          };
+                              user.sayHi();
+
+
+                              function makeUser() {
+                                return {
+                                  name: "John",
+                                  ref: this
+                                };
+                              }
+
+                              let user = makeUser();
+
+                              alert( user.ref.name );
+
+                              let calculator = {
+                                read(){
+                                         let Q = this.a = +prompt("Give A number Bettwiin 1 to 10", 1);
+                                         let W = this.b = +prompt("Give A number Bettwiin 1 to 10", 1);
+                                        },
+
+                                      a :"" ,
+                                      b : "",
+
+
+                                    sum(){
+
+                                      return (calculator.a + calculator.b);
+
+                                       },
+                                      mul(){
+                                        return  (calculator.sum()*2 );
+
+                                      },
+
+                                 };
+
+                                calculator.read();
+                                 alert( calculator.sum() );
+                                 alert( calculator.mul() );
+
+
+                                 let ladder = {
+                      step: 0,
+                      up() {
+                        this.step++;
+                        return this;
+                      },
+                      down() {
+                        this.step--;
+                        return this;
+                      },
+                      showStep: function() { // shows the current step
+                        alert( this.step ) ;
+                        return this;
+                      }
+                    };
+                    ladder
+                    .up()
+                    .up()
+                    .down()
+                    .showStep() // 1
+                    .down()
+                    .showStep(); // 0
+
+                    //Constructor, operator "new"
+                    function User(name) {
+        this.name = name;
+        this.isAdmin = false;
+      }
+      let user = new User("Jatin");
+
+      alert(user.name);
+      alert(user.isAdmin)
+
+
+      //Constructor mode test: new.target
+
+      function User() {
+        alert(new.target);
+      }
+
+      // without "new":
+      User(); // undefined
+
+      // with "new":
+      new User(); // function User { ... }
+
+
+      function User(name) {
+        if (!new.target) {
+          return new User(name);
+        }
+        this.name = name ;
+      }
+      let jhon = User("jatin")
+      alert(jhon.name)
+
+
+      //Methods in constructor
+      function User(name) {
+        this.name = name ;
+        this.sayHi = function () {
+          alert("name is"+ this.name)
+        }
+      }
+      let jhon = new User("Jatin");
+      alert(jhon.name)
+      /*
+      john = {
+        name: "John",
+        sayHi: function() { ... }
+      }
+
+
+                           function Calculator() {
+                                  this.read = function () {
+                                     this.a = +prompt("a?", 0 );
+                                     this.a = +prompt("b?", 0 );
+                                  };
+                                  this.sum = function()  {
+                                         return this.a + this.b ;
+                                  };
+                                  this.mul = function(){
+                                    return this.a * this.b;
+                                  };
+                           };
+                                 let calculator = new Calculator();
+                                 calculator.read();
+
+                                 alert( "Sum=" + calculator.sum() );
+                                 alert( "Mul=" + calculator.mul() );
+
+                                 function Accumulator(startingValue) {
+                                   this.value= startingValue
+                                   this.read= function(){
+                                     this.value += +prompt("a?",1);
+                                    }
+
+                                  }
+                                  let accumulator = new Accumulator(1);
+
+                                  accumulator.read();
+                                  accumulator.read();
+                                  alert(accumulator.value);
+
+                                  */
+                      //Optional chaining (?)
+                     /*
+                      let user = {}; // user has no address
+
+                      alert( user?.address?.street ); // undefined (no error)
+                      // user exist then address exist then the code will run like = ( user.address.street ) this
+                      // if there no exist user or address then the result would be undefind.
+
+
+                      // another ex
+                      let html = document.querySelector('.elem')?.innerHTML; // will be undefined, if there's no element
+
+
+                      // another ex
+                      let user = null;
+                      alert( user?.address ); // undefined
+                      alert( user?.address.street ); // undefined
+
+                      // if there is no user then
+                      // ReferenceError: user is not defined
+                      user?.address;
+
+                      //Short-circuiting
+                      let user = null;
+                      let x = 0 ;
+                      user?.sayHi(x++);// no "user", so the execution doesn't reach sayHi call and x++
+                      alert(x);// 0, value not incremented
+
+
+                      // Other variants: ?.(), ?.[]
+
+                      let userAdmin ={
+                          admin(){
+                              alert("I Am Admin")
+                          }
+                      }
+                      let userGuest = {};
+
+                      userAdmin.admin?.(); // I am admin
+                      userGuest.admin?.(); // nothing happens (no such method)
+
+
+                      let key = "firstName";
+                      let user1= {
+                          firstName:"John",
+                      }
+                      let user2 = null;
+
+                      alert(user1?.[key])// John
+                      alert(user2?.[key])// undefined
+
+
+                      //Also we can use ?. with delete:
+                      delete user?. name ; // delete user.name if user exists
+
+
+                      // Symbol type
+                      let id = Symbol();
+                      // we give symbol a uniq name
+                      let id = Symbol("id");
+
+                      let id1 = Symbol("id");
+                      let id2 = Symbol("id");
+
+                      alert(id1 == id2); // false
+
+                      let id = Symbol("id");
+                      alert(id); // TypeError: Cannot convert a Symbol value to a string
+
+
+                      // let id = Symbol("id");
+                      /* alert(id.toString("id")); *//*or*/ /*alert(id.description);//to show the description only: */
+
+
+                      /*
+                   //“Hidden” properties
+
+                   let user ={ // belongs to another code
+                         name :"John",
+                   }
+                   let id = Symbol("id")
+                  user[id]=1;
+
+                  alert( user[id] ); // we can access the data using the symbol as the key
+
+
+                  let id = Symbol("id");
+
+                  user[id] = "Their id value";
+
+                  let user = { name: "John" };
+
+                  // Our script uses "id" property
+                  user.id = "Our id value";
+
+                  // ...Another script also wants "id" for its purposes...
+
+                  user.id = "Their id value"
+                  // Boom! overwritten by another script!
+
+
+                  //Symbols in an object literal
+                  let id = Symbol("id")
+                  let user= {
+                    name : "john",
+                    [id]: 123 // not "id": 123
+                  }
+
+                  //Symbols are skipped by for…in
+                  //Symbolic properties do not participate in for..in loop.
+
+
+                  let id = Symbol("id");
+                  let = {
+                    name : "John",
+                    age:30,
+                    [id]:123,
+                  };
+                  for (let key in user) {
+
+                    alert(key) ;  // name, age (no symbols)
+                  }
+                  // the direct access by the symbol works
+                  alert("Direct + " + user[id]);   // Direct: 123
+
+
+                  let id = Symbol("id");
+                  let user = {
+                    [id]: 123
+                  };
+
+                  let clone = Object.assign({}, user);
+
+                  alert( clone[id] ); // 123
+
+
+                  // Global symbols
+
+
+                  // read from the global registry
+                  let id = Symbol.for("id"); // if the symbol did not exist, it is created
+
+                  // read it again (maybe from another part of the code)
+                  let idAgain = Symbol.for("id");
+
+                  // the same symbol
+                  alert( id === idAgain ); // true
+
+
+                  //Symbol.keyFor
+
+                  // get symbol by name
+                  let sym = Symbol.for("name");
+                  let sym2 = Symbol.for("id");
+
+                  // get name by symbol
+                  alert(Symbol.keyFor(sym)) // name
+                  alert(Symbol.keyfor(sym2)) // id
+
+
+                  let globalSymbol = Symbol.for("name");
+                  let localSymbol = Symbol("name");
+
+                  alert( Symbol.keyFor(globalSymbol) ); // name, global symbol
+                  alert( Symbol.keyFor(localSymbol) ); // undefined, not global
+
+                  alert( localSymbol.description ); // name
+
+                  */
+
+                  /*
+                    //Object to primitive conversion
+                      //Hints
+                      // output
+                      alert(obj);
+
+                      // using object as a property key
+                      anotherObj[obj] = 123;
+
+
+                      //Explict conversion
+                      let num = Number(obj);
+
+                      // maths (except binary plus)
+                      let n = +obj;
+                      let delta = date1 - date2;
+
+                      // less/greater comparison
+                      let greater = date1 > date2;
+
+                      // binary plus uses the "default" hint
+                      let total = obj1 + obj2;
+
+                      // obj == number uses the "default" hint
+                      if (user == 1) { ... };
+
+
+                      //Symbol.toPrimitive
+
+                      obj[Symbol.toPrimitive]= function hint(){
+                        // here goes the code to convert this object to a primitive
+                        // it must return a primitive value
+                        // hint = one of "string", "number", "default"
+                      };
+
+
+                      let user = {
+                        name: "Jatin",
+                        money: 1000,
+                        [Symbol.toPrimitive](hint){
+                          alert(`hint: ${hint}`);
+                          return ( hint == "string"? `{name: "${this.name}"}` : this.money );
+                        }
+                      };
+                      //alert(user);// hint: string -> {name: "John"}
+                      //alert(+user); // hint: number -> 1000
+                      //alert(user+500); // hint: default -> 1500
+
+
+                      //toString/valueOf
+
+                      let user = {name:"Jatin",};
+                      //alert(user); //[object Object]
+                      //alert(user.valueOf()===user);//true
+
+
+                      let user = {
+                        name:"Jatin",
+                        money:1000,
+                        // for hint="string"
+                        toString(){
+                          return(`{name:${this.name}}`);
+                        },
+                         // for hint="number" or "default"
+                         valueOf(){
+                           return (this.money);
+                         }
+                      }
+                      alert(user); // toString -> {name: "John"}
+                      alert(+user); // valueOf -> 1000
+                      alert(user + 500); // valueOf -> 1500
+
+
+                      //Further conversions
+
+                      let obj = {
+                        // toString handles all conversions in the absence of other methods
+                        toString() {
+                          return "2";
+                        }
+                      };
+
+                      alert(obj * 2); // 4, object converted to primitive "2", then multiplication made it a number
+
+                      let obj = {
+                         toString() {
+                           return "2";
+                       }
+                      };
+
+                       alert(obj + 2); // 22 ("2" + 2), conversion to primitive returned a string => concatenation
+
+
+
+
+
+                      // DATA TYPES
+
+                      //Methods of primitives
+
+                    // One of the best things about objects is that we can store a function as one of its properties.
+
+                   let john = {
+                     name: "John",
+                     sayHi: function() {
+                       alert("Hi buddy!");
+                     }
+                   };
+
+                   john.sayHi(); // Hi buddy!
+
+                   //A primitive as an object
+
+                  //For instance, there exists a string method str.toUpperCase() that returns a capitalized str.
+
+                  //Here's how it works:
+
+                  let str = "Hello";
+                  alert( str.toUpperCase() ); // HELLO
+
+                //A number has methods of its own, for instance, toFixed(n) rounds the number to the given precision:
+                let n = 1.2345678;
+                alert(n.toFixed(2));  //1.23
+
+                //null/undefined have no methods
+                alert(null.test); //error
+
+                //task
+                let str = "Hello";
+                str.test = 5; // (*)
+                alert(str.test);  // undefined
+
+
+                //Numbers
+
+                //More ways to write a number
+                let billion = 1000000000;
+                let billion = 1_000_000_000;
+
+        //In JavaScript, we can shorten a number by appending the letter "e" to it and specifying the zeroes count:
+
+                let billion = 1e9;  // 1 billion, literally: 1 and 9 zeroes
+                alert( 7.3e9 );  // 7.3 billions (same as 7300000000 or 7_300_000_000)
+
+                //In other words, e multiplies the number by 1 with the given zeroes count.
+
+                1e3 === 1 * 1000; // e3 means *1000
+                1.23e6 === 1.23 * 1000000; // e6 means *1000000
+
+
+                Now let’s write something very small. Say, 1 microsecond (one millionth of a second):
+
+                let mсs = 0.000001;
+
+            //In other words, a negative number after "e" means a division by 1 with the given number of zeroes:
+            // -3 divides by 1 with 3 zeroes
+            1e-3 ===1 /1000; // 0.001
+
+            // -6 divides by 1 with 6 zeroes
+            1.23e-6 === 1.23 /1000000 ; //  0.00000123
+
+            // an example with a bigger number
+            1234e-2 === 1234 / 100; // 12.34, decimal point moves 2 times
+
+            
+            //Hex, binary and octal numbers
+            
+            //Hexadecimal numbers are widely used in JavaScript to represent colors, encode characters, 
+            //and for many other things. So naturally, there exists a shorter way to write them: 0x and then the number.
+            
+            //For instance:
+            
+            alert( 0xff ); // 255
+            alert( 0xFF ); // 255 (the same, case doesn't matter)
+            //Binary and octal numeral systems are rarely used, but also supported using the 0b and 0o prefixes:
+            
+            let a = 0b11111111; // binary form of 255
+            let b = 0o377; // octal form of 255
+            
+            alert( a == b ); // true, the same number 255 at both sides
+
+            
+            //toString(base)
+            
+            let num = 255;
+            alert(num.toString(16)); //ff
+            alert( num.toString(2) );   // 11111111
+            
+            alert( 123456..toString(36) ); // 2n9c
+
+            
+            let num = 1.23456;
+            alert(Math.round(num * 100)/ 100); // 1.23456 -> 123.456 -> 123 -> 1.23 
+            
+            
+            let num = 12.34;
+            alert(num.toFixed(1)); //This rounds up or down to the nearest value, similar to Math.round:           
+
+            // (till ( .4 ) it will give lower value after ( .4 ) it will give higher value)
+            let num = 12.36;
+             alert( num.toFixed(1) ); // "12.4"
+
+             
+             let num = 12.34;
+             alert( num.toFixed(5) ); // "12.34000", added zeroes to make exactly 5 digits
+             
+             
+             //Imprecise calculations
+             alert( 1e500 ); // Infinity
+             
+             alert(0.1 + 0.2 == 0.3); //  // false
+             
+             alert(0.1 + 0.2); // // 0.30000000000000004
+             
+             alert( 0.1.toFixed(20) ); // 0.10000000000000000555
+             alert( (0.1 + 0.2).toFixed(1) ); //0.3
+             
+             /*Please note that toFixed always returns a string. It ensures that it has 2 digits after the decimal point.
+             That’s actually convenient if we have an e-shopping and need to show $0.30.
+             For other cases, we can use the unary plus to coerce it into a number:*/
+             /*
+             
+             let sum = 0.1 + 0.2;
+             alert( sum.toFixed(2) ); // "0.30"
+            
+             
+          
+             
+             alert( (0.1 * 10 + 0.2 * 10) / 10 ); // 0.3
+             alert( (0.28 * 100 + 0.14 * 100) / 100); // 0.4200000000000001
+             
+             // Hello! I'm a self-increasing number!
+             alert( 9999999999999999 ); // shows 10000000000000000
+             
+             
+             //Tests: isFinite and isNaN
+             alert(isNaN(Nan)); // true  
+             alert(isFinite("str")); //true
+             
+             //we cant do this 
+             alert( NaN === NaN ); // false
+             
+             //isFinite(value) converts its argument to a number and returns true if it’s a regular number, 
+             //not NaN/Infinity/-Infinity:
+             
+             alert( isFinite("15") ); // true
+             alert( isFinite("str") ); // false, because a special value: NaN
+             alert( isFinite(Infinity) ); // false, because a special value: Infinity            
+             
+             //Sometimes isFinite is used to validate whether a string value is a regular number:
+             let num = +prompt("give a nonInfint NUmber", "") ;
+             alert(isFinite(num));            
+             
+             //parseInt and parseFloat
+             alert( +"100px" ); // NaN
+             
+             alert(parseInt("100px"));  // 100
+             alert(parseFloat("12.5em")); //12.5
+             
+             alert(parseInt('12.3'));   // 12, only the integer part is returned
+             alert(parseFloat('12.3.4'));   // 12.3, the second point stops the reading
+             
+             alert( parseInt('a123') ); // NaN, the first symbol stops the process
+             
+             //The parseInt() function has an optional second parameter. It specifies the base of the numeral system,
+             //so parseInt can also parse strings of hex numbers, binary numbers and so on:
+             alert( parseInt('0xff', 16) ); // 255
+             alert( parseInt('ff', 16) ); // 255, without 0x also works
+             
+             alert( parseInt('2n9c', 36) ); // 123456
+             
+             //Other math functions
+             
+             //Math.random()
+             alert( Math.random() ); // 0.1234567894322
+             alert( Math.random() ); // 0.5435252343232
+             alert( Math.random() ); // ... (any random numbers)
+             
+             //Returns the greatest and smallest from the arbitrary number of arguments.
+             
+             alert( Math.max(3, 5, -10, 0, 1) ); // 5
+             alert( Math.min(1, 2) ); // 1
+             
+             //Returns n raised to the given power.
+             
+             alert( Math.pow(2, 10) ); // 2 in power 10 = 1024
+             
+             //tsk
+             function ask() {
+               let new_user =   +prompt("give a number","");
+               let Extistiing_user =  +prompt("give a number Again","");
+               
+               alert(` your given number is ${Math.round(new_user)}, angain given number is ${Math.round(Extistiing_user)} we will + (ADD) this two Numbers`);
+               
+               let anser_user= (`After Adding These Two Number's The Anser is = ${new_user + Extistiing_user}`);
+               alert(anser_user);
+              }
+              ask();
+              
+              function readNumber() {
+                let num ;
+                do {
+                  num =  prompt("Enter a number please?", 0);
+                } while (!isFinite(num));
+                if (num === null || num === " ") return null;
+                
+                return +num;
+              }
+              alert(readNumber());
+              
+              
+              function random (a, b) {
+                let one = a;
+                do {
+                  alert( one = +prompt("Enter a number A please?", 0) );
+                } while (!isFinite(one));
+                if (one === null || one === "") return null;
+                let two = b;
+                do {
+                  alert( two = +prompt("Enter a number B please?", 0) );
+                } while (!isFinite(two));
+                if (two === null || two === "") return null;
+                let d = Math.random(a, b);
+                return d
+              }
+              alert(random());
+              
+              //Strings'
+              
+              //Special characters
+              //let guestList = "Guests:\n * John\n * Pete\n * Mary";
+              //alert(guestList); // a multiline list of guests
+              
+              let guestList = "Guests:\n * John\n * Pete\n * Mary";
+              alert(guestList); // a multiline list of guests
+              
+              let str1 = "Hello\nWorld"; // two lines using a "newline symbol"
+              
+              // two lines using a normal newline and backticks
+              let str2 = `Hello
+              World`;
+              
+              alert(str1 == str2); // true
+              
+              alert( 'I\'m the Walrus!' ); // I'm the Walrus!
+              
+              //Accessing characters
+              
+              //To get a character at position pos, use square brackets [pos] or call the method str.charAt(pos). 
+              //The first character starts from the zero position:
+              
+              let str = `Hello`;
+              
+              // the first character
+              alert( str[0] ); // H
+              alert( str.charAt(0) ); // H
+              
+              // the last character
+              alert( str[str.length - 1] ); // o
+              
+              //We can also iterate over characters using for..of:
+              
+              for (let char of "Hallo") {
+                alert (char)  // H,e,l,l,o (char becomes "H", then "e", then "l" etc)
+              }               
+              let str = `hi`;
+              str = `h` + str [1];
+              alert(str);
+              
+              //Changing the case
+              alert( 'Interface'.toUpperCase() ); // INTERFACE
+              alert( 'Interface'.toLowerCase() ); // interface
+              
+              //Or, if we want a single character lowercased:
+              alert( 'Interface'[0].toLowerCase() ); // 'i'
+              
+              //Searching for a substring
+              //str.indexOf
+              
+              let str = 'Widget with id';
+              
+              alert( str.indexOf('Widget') ); // 0, because 'Widget' is found at the beginning
+              alert( str.indexOf('widget') ); // -1, not found, the search is case-sensitive
+              
+              alert( str.indexOf("id") ); // 1, "id" is found at the position 1 (..idget with id
+              
+              let str = 'Widget with id';
+              
+              alert( str.indexOf('id', 2) ) // 12
+              
+              let str = 'As sly as a fox, as strong as an ox';
+              
+              let target = 'as'; // let's look for it
+              
+              let position = 0;
+              while (true) {
+                
+                let foundPosition = str.indexOf(target, position);
+                if (foundPosition == -1) {
+                  break ;
+                };
+                alert(`position of ("as") found at = ${foundPosition}`);
+                position= foundPosition + 1;  // continue the search from the next position
+              }
+              
+              //The same algorithm can be layed out shorter:
+              
+              let str = "As sly as a fox, as strong as an ox";
+              let target = "as";
+              
+              let pos = -1;
+              while ((pos = str.indexOf(target, pos + 1)) != -1) {
+                alert( pos );
+              }
+              //The bitwise NOT trick
+              alert( ~2 ); // -3, the same as -(2+1)
+              alert( ~1 ); // -2, the same as -(1+1)
+              alert( ~0 ); // -1, the same as -(0+1)
+              alert( ~-1 ); // 0, the same as -(-1+1)
+              
+              let str = "Widget";
+              
+              if (~str.indexOf("Widget")) {
+                alert( 'Found it!' ); // works
+              }
+              
+              //includes, startsWith, endsWith
+              
+              alert( "Widget with id".includes("Widget") ); // true
+              alert( "Hello".includes("Bye") ); // false
+              
+              //The optional second argument of str.includes is the position to start searching from:
+              
+              alert( "Widget".includes("id") ); // true
+              alert( "Widget".includes("id", 3) ); // false, from position 3 there is no "id"
+              
+              //The methods str.startsWith and str.endsWith do exactly what they say:
+              
+              alert( "Widget".startsWith("Wid") ); // true, "Widget" starts with "Wid"
+              alert( "Widget".endsWith("get") ); // true, "Widget" ends with "get"
+              
+              //Comparing strings
+              alert( 'a' > 'Z' ); // true
+              alert( 'Österreich' > 'Zealand' ); // true
+              // to understen what happend 
+              //str.codePointAt(pos)
+              alert( "z".codePointAt(0) ); // 122  
+              alert( "Z".codePointAt(0) ); // 90 
+              
+              //String.fromCodePoint(code)
+              //Creates a character by its numeric code
+              alert( String.fromCodePoint(90) ); // Z
+              let str = "";
+              for (let i = 65; i <= 220; i++) {
+                str +=String.fromCodePoint(i);
+                
+                
+              }
+              alert(str);
+
+              // Task 
+              function ucFirst(str) {
+                
+                let change_FirstChar = str[0];
+                let add_Changed_FirstChar = str;
+                
+                return(alert((change_FirstChar.toUpperCase()) + (add_Changed_FirstChar.slice(1))));
+              };
+              
+              let newStr = ucFirst("jhon") ;
+              console.log(newStr);
+              
+              alert(ucFirst());
+              //task
+              function checkSpam(str) {
+                let chack = str.toLowerCase() ;
+                if (chack.includes('viagra') || lowerStr.includes('xxx')) {
+                  alert(`true`)
+                }
+                else{
+                  alert(`false`)
+                }
+              };
+              let spam = checkSpam(`ViAgRA, xxxxxxx`);
+              
+              //task
+              function truncate(str, maxlength) {
+                let a = str;
+                let b = maxlength;
+                let d= "...";
+                
+                let c = ((a.length > b))?  a = (str.slice(-0, -b))?  a = (str.slice(-0 + d, -b)) + d : a  :  a ;
+                
+                
+                
+                console.log(c);
+              };
+              
+              let newStr = truncate("What I'd like to tell on this topic is:", 20) // = "What I'd like to te…"
+              //      let newStr =truncate("Hi everyone!", 20) //= "Hi everyone!"
+              
+              //task
+              function extractCurrencyValue(str) {
+                let a = str ;
+                
+                let b = ( a.include="$" )?  ( Number( str.replace ("$", ""))) : "nice";
+                console.log(b);
+                
+                let chack = b===120;
+                console.log(chack);
+                
+              };
+              
+              let Money = extractCurrencyValue('$120');
+              
+              //Arrays
+              let fruits = ["Apple", "Orange", "Plum"];
+              
+              alert( fruits[0] ); // Apple
+              alert( fruits[1] ); // Orange
+              alert( fruits[2] ); // Plum
+              
+              fruits[2]="Nice";
+              alert( fruits[2] ); // Nice
+              
+              //…Or add a new one to the array:
+              fruits[3] = 'Lemon'; // now ["Apple", "Orange", "Nice", "Lemon"]
+              
+              console.log(fruits); // ['Apple', 'Orange', 'Nice']
+              
+              //An array, just like an object, may end with a comma:
+              
+              let fruits = [
+                "Apple",
+                "Orange",
+                "Plum",
+              ];
+              
+              //Get last elements with “at” 
+              //thi is a resent addition 
+              
+              //to get the last item from the arry 
+              //the old way 
+              let fruits = ["Apple", "Orange", "Plum"];
+              alert( fruits[fruits.length-1] ); // Plum
+              
+              //the Esasy way 
+              let fruits = ["Apple", "Orange", "Plum"];
+              alert(fruits.at(-1)); //Plum
+              
+              //Methods pop/push, shift/unshift
+              //pop
+              let fruits = ["Apple", "Orange", "Pear"];
+              alert( fruits.pop() ); // remove "Pear" and alert it
+              alert( fruits ); // Apple, Orange
+              
+              //push
+              let fruits = ["Apple", "Orange"];
+              fruits.push("Pear"); //pushes the "pear" to the end of the array 
+              alert( fruits ); // Apple, Orange, Pear
+              
+              //shift
+              let fruits = ["Apple", "Orange", "Pear"];
+              alert( fruits.shift() ); // remove Apple and alert it
+              alert( fruits ); // Orange, Pear
+              
+              //unshift
+              let fruits = ["Orange", "Pear"];
+              ruits.unshift('Apple');
+              alert( fruits ); // Apple, Orange, Pear
+              
+              //Methods push and unshift can add multiple elements at once:
+              
+              let fruits = ["Apple"];
+              fruits.push("Orange", "Peach");
+              fruits.unshift("Pineapple", "Lemon");
+              
+              // ["Pineapple", "Lemon", "Apple", "Orange", "Peach"]
+              alert( fruits );
+              
+              //Internals
+              let fruits = ["Banana"]
+              
+              let arr = fruits; // copy by reference (two variables reference the same array)
+              
+              alert( arr === fruits ); // true
+              
+              arr.push("Pear"); // modify the array by reference
+              
+              alert( fruits ); // Banana, Pear - 2 items now
+              
+              //Thais is possible, because arrays are objects at their base. We can add any properties to them.
+              let fruits = []; // make an array
+              
+              fruits[99999] = 5; // assign a property with the index far greater than its length
+              
+              fruits.age = 25; // create a property with an arbitrary name
+              
+              console.log(fruits);
+              
+              //Loops
+              let arr = ["Apple", "Orange", "Pear"];
+              for (let i = 0; i < arr.length; i++) {
+                console.log( arr[i]); 
+                
+              }
+              
+              //But for arrays there is another form of loop, for..of:
+              let arr = ["Apple", "Orange", "Pear"];
+              for (let smothing of arr) {
+                console.log(smothing);
+              };
+              
+              //Technically, because arrays are objects, it is also possible to use for..in:
+              let arr = ["Apple", "Orange", "Pear"];
+              for (let  smothing in arr) {
+                
+                console.log(arr[smothing]);
+              }
+              
+              
+              //A word about “length”
+              let fruits = [];
+              fruits[123] = "Apple";
+              
+              alert( fruits.length ); // 124
+              
+              let arr = [1, 2, 3, 4, 5];
+              
+              arr.length = 2; // truncate to 2 elements
+              alert( arr ); // [1, 2]
+              
+              arr.length = 5; // return length back
+              alert( arr[3] ); // undefined: the values do not return
+              
+              //Multidimensional arrays
+              let matrix = [[1, 2, 3],[4, 5, 6],[7, 8, 9]];
+              
+              alert( matrix[1][1] ); // 5, the central element
+              
+              //toString
+              let arr = [1, 2, 3];
+              
+              alert( arr ); // 1,2,3
+              alert( String(arr) === '1,2,3' ); // true
+              
+              //Also, let’s try this:
+              
+              alert( [] + 1 ); // "1"           // alert( "" + 1 ); // "1"
+              alert( [1] + 1 ); // "11"         // alert( "1" + 1 ); // "11"
+              alert( [1,2] + 1 ); // "1,21"     // alert( "1,2" + 1 ); // "1,21"
+              
+              //Don’t compare arrays with ==
+              alert( [] == [] ); // false
+              alert( [0] == [0] ); // false
+              
+              //Comparison with primitives may give seemingly strange results as well:
+              
+              alert( 0 == [] ); // true
+              alert('0' == [] ); // false
+              // after [] was converted to ''
+              alert( 0 == '' ); // true, as '' becomes converted to number 0
+              alert('0' == '' ); // false, no type conversion, different strings
+              
+              //tesk
+              let styles = ["Jazz", "Blues"];
+              styles.push("Rock-n-Roll");
+              styles[Math.floor((styles.length - 1) / 2)] = "Classics";
+              alert( styles.shift() );
+              styles.unshift("Rap", "Reggae");
+              
+              //task
+              function sumInput() {
+                
+                let numbers = [];
+                
+                while (true) {
+                  
+                  let value = prompt("A number please?", 0);
+                  
+                  // should we cancel?
+                  if (value === "" || value === null || !isFinite(value)) break;
+                  
+                  numbers.push(+value);
+                }
+                
+                let sum = 0;
+                for (let number of numbers) {
+                  sum += number;
+                }
+                return sum;
+              }
+              
+              alert( sumInput() );
+              
+              function getMaxSubSum(arr) {
+                let a = arr = [1, -2, 3, 4, -9, 6];
+                for (let smothing of a) {
+                  //console.log(smothing);
+                  
+                  
+                }
+              }
+              getMaxSubSum();
+              
+              
+              //Array methods
+              //splice
+              The syntax is:
+
+              arr.splice(start[, deleteCount, elem1, ..., elemN])
+              The arrays are objects, so we can try to use delete:
+              
+              let arr = ["I", "go", "home"];
+              
+              delete arr[1]; // remove "go"
+              
+              alert( arr[1] ); // undefined
+              
+              // now arr = ["I",  , "home"];
+              alert( arr.length ); // 3
+              
+              let arr = ["I", "study", "JavaScript"];
+              arr.splice(1,1);
+              console.log(arr);
+              
+              //In the next example we remove 3 elements and replace them with the other two:
+              
+              let arr = ["I", "study", "JavaScript", "right", "now"];             
+              arr.splice(0,3, "lets go", "dence");
+              console.log(arr);
+              
+              //Here we can see that splice returns the array of removed elements:
+              
+              let arr = ["I", "study", "JavaScript", "right", "now"];
+              
+              // remove 2 first elements
+              let removed = arr.splice(0, 2);
+              
+              alert( removed ); // "I", "study" <-- array of removed elements            
+              
+              let arr = ["I", "study", "JavaScript"];
+              
+              // from index 2
+              // delete 0
+              // then insert "complex" and "language"
+              arr.splice(2, 0, "complex", "language");
+              
+              alert( arr ); // "I", "study", "complex", "language", "JavaScript"
+              
+              let arr = [1, 2, 5];
+              
+              // from index -1 (one step from the end)
+              // delete 0 elements,
+              // then insert 3 and 4
+              arr.splice(-1,0, 3,4)
+              
+              alert( arr ); // 1,2,3,4,5
+              
+              //slice
+              //The syntax is:
+              
+              arr.slice([start], [end]);
+              
+              let arr = ["t", "e", "s", "t"];
+              
+              alert(arr.slice(0,3));// e,s (copy from 1 to 3) // not includeing 3 takes (0,1,2)
+              alert( arr.slice(-2) ); // s,t (copy from -2 till the end)  //not includeing -2  takes(-0,-1)
+              
+              //concat
+              //The syntax is:
+              
+              arr.concat(arg1, arg2...)
+              
+              let arr = [1, 2];
+              
+              // create an array from: arr and [3,4]
+              alert( arr.concat([3, 4]) ); // 1,2,3,4
+              
+              // create an array from: arr and [3,4] and [5,6]
+              alert( arr.concat([3, 4], [5, 6]) ); // 1,2,3,4,5,6
+              
+              // create an array from: arr and [3,4], then add values 5 and 6
+              alert( arr.concat([3, 4], 5, 6) ); // 1,2,3,4,5,6
+              
+              let arr=[1,2];
+              let arraylike= {
+                0:"smothing",
+                length:1
+              };
+              arr.concat(arraylike);
+              
+              //…But if an array-like object has a special Symbol.isConcatSpreadable property, 
+              //then it’s treated as an array by concat: its elements are added instead:
+              
+              
+              let arr=[1,2];
+              let arraylike= {
+                0:"smothing",
+                1:"new"  ,
+                [Symbol.isConcatSpreadable]:true,
+                length: 2
+              };
+              arr.concat(arraylike);
+              
+              //Iterate: forEach
+              The syntax:
+              
+              arr.forEach(function(item, index, array) {
+                // ... do something with item
+              });
+              
+              // for each element call alert
+              ["Bilbo", "Gandalf", "Nazgul"].forEach(alert);
+              
+              ["Bilbo", "Gandalf", "Nazgul"].forEach( (item, index, array)  =>{
+                alert(`${item} is at index ${index} in ${array}`)
+              });
+              
+              //Searching in array
+              let arr = [1, 0, false];
+              
+              alert( arr.indexOf(0) ); // 1
+              alert( arr.indexOf(false) ); // 2
+              alert( arr.indexOf(null) ); // -1
+              
+              alert( arr.includes(1) ); // true
+              
+              //The method arr.lastIndexOf is the same as indexOf, but looks for from right to left.
+              
+              let fruits = ['Apple', 'Orange', 'Apple']
+              
+              alert( arr.indexOf('Apple') ); // 0 (first Apple)
+              alert( arr.lastIndexOf('Apple') ); // 2 (last Apple)
+              
+              
+              //find and findIndex/findLastIndex
+              //Imagine we have an array of objects. How do we find an object with the specific condition?
+              
+              //Here the arr.find(fn) method comes in handy.
+              
+              //The syntax is:
+              
+              let result = arr.find(function(item, index, array) {
+                // if true is returned, item is returned and iteration is stopped
+                // for falsy scenario returns undefined
+              });
+              
+              let users = [
+                {id: 1, name: "John"},
+                {id: 2, name: "Pete"},
+                {id: 3, name: "Mary"}
+              ];
+              let user = users.find((item) => item.id==1 );
+              alert(user.name); // John
+              
+              //The arr.findIndex method has the same syntax, but returns the index where the element was
+              //  found instead of the  element itself. The value of -1 is returned if nothing is found.
+              // element itself. The value of -1 is returned if nothing is found.
+              
+              let users = [
+                {id: 1, name: "John"},
+                {id: 2, name: "Pete"},
+                {id: 3, name: "Mary"},
+                {id: 4, name: "John"}
+              ];
+              
+              // Find the index of the first John
+              alert(users.findIndex((user) => user.name == 'John')); // 0
+              
+              // Find the index of the last John
+              alert(users.findLastIndex((user) => user.name == 'John')); // 3
+              
+              //      filter
+              //The syntax is similar to find, but filter returns an array of all matching elements:
+              let results = arr.filter(function(item, index, array) {
+                // if true item is pushed to results and the iteration continues
+                // returns empty array if nothing found
+              });
+              
+              let users = [
+                {id: 1, name: "John"},
+                {id: 2, name: "Pete"},
+                {id: 3, name: "Mary"}
+              ];
+              // returns array of the first two users
+              let someUsers = users.filter(item => item.id < 3);
+              
+              alert(someUsers.length); // 2
+              
+              //Transform an array
+              //map
+              //The syntax is:
+              
+              let result = arr.map(function(item, index, array) {
+                // returns the new value instead of item
+              });
+              let smohting2 = ["Bilbo", "Gandalf", "Nazgul"].map((item)=> item.length);
+              alert(smohting2);
+              
+              //sort(fn)
+              //split and join
+              let names = 'Bilbo, Gandalf, Nazgul';
+              
+              let arr = names.split(', ');
+              
+              for (let name of arr) {
+                alert( `A message to ${name}.` ); // A message to Bilbo  (and other names)
+              }
+              
+              //Split into letters
+              //The call to split(s) with an empty s would split the string into an array of letters:
+              
+              let str = "test";
+              
+              alert( str.split('') ); // t,e,s,t
+              
+              
+              // copy array for re-use and the new array shoude not affect  the origenel array
+              function trye() {
+                let arr1 =["one", "two", "three"];
+                let  ar =  arr1.slice(arr1);
+                ar.splice(0,1,"five");
+                console.log(ar);
+                console.log(arr1);
+                
+              }
+              trye();
+              
+              // 
+              
+              function trye1() {
+                let arr =[1, 2];
+                console.log(  arr.concat([3, 4]));
+                
+                console.log(  arr.concat([3,4], [5,6]));
+                
+                console.log(  arr.concat([3,4], [5,6], 7, 8));
+              }
+              trye1();
+              
+              function fore() {
+                let arr= ["one", "two", "three"];
+                Array.from(arr).forEach((item ,index , array)=> {
+                  // console.log(arr);
+                  //or
+                  console.log(item ,index , array);
+                });
+              }
+              fore() ;
+              
+              function indexO() {
+                let arr= ["one", "two", "three"];
+                console.log(arr.indexOf("one")); // found at 0'ath Potione
+                console.log(arr.indexOf("two")); // found at 1'st Potione
+                console.log(arr.indexOf("smothing")); // did not found so  -1 is the  Potione 
+                console.log(arr.lastIndexOf("one")); 
+              }
+              indexO()
+              
+              function indexO() {
+                let arr= [ 
+                  {
+                    id: 1, name: "John",
+                    [Symbol.isConcatSpreadable]:true,
+                    
+                  },
+                  
+                  {
+                    id: 2, name: "Pete",
+                    [Symbol.isConcatSpreadable]:true,
+                    
+                  },
+                  
+                  {
+                    id: 3, name: "Mary",
+                    [Symbol.isConcatSpreadable]:true,
+                    
+                  }
+                  
+                ];
+                
+                //find
+                console.log(arr.find((item) => item.id==1));
+                console.log(arr.findLastIndex((item) => item.id==3));
+                //filter
+                console.log(arr.filter((item) => item.id < 3));
+              }
+              
+              indexO()
+              
+              //MAP
+              function Mapo() {
+                let arr=["one","two","three"];
+                console.log(arr.map((item) => item.length));
+              }
+              Mapo() 
+              
+              // split
+              function spliter() {
+                let Name = "jatin , thola, rhohana, chuca, mohan";
+                let arr = Name.split(",", 3); 
+                for (let smothing of arr) {
+                  console.log(`split with "  ,  " ${smothing} `);
+                };
+                
+              };
+              spliter()
+              
+              //join
+              function joint() {
+                let Name =[ "jatin",  " thola",  " rhohana",  " chuca",  " mohan" ];
+                let arr = Name.join(';');
+                console.log(arr);
+              }
+              joint()
+              
+              //redues
+              function redues() {
+                let arr = [1,2,3,4,5];
+                console.log(arr.reduce((a, b)=> a+b, 0)); // ans = 15;
+                //firts time a= 0 and b = 1;  (a+b) = ans = 1;
+                //afterthat  a = 0+1 =1 and b = 2 (a+b) = ans = 3;
+                //afterthat  a = (same-as-before) = 3 and b = 3 (a+b) = ans = 6;
+                //afterthat  a = (same-as-before) = 6 and b = 4 (a+b) = ans = 10;
+                //afterthat  a = (same-as-before) = 10 and b = 5 (a+b) = ans = 15;
+                
+                // totell = 15; 
+                
+                let arr2 = [ "jatin",  " thola",  " rhohana",  " chuca",  " mohan"];
+                console.log(arr2.reduce((a, b)=> a + b));
+              }
+              redues();
+              
+              //Array.isArray(Value);
+              function isArray() {
+                let arr = ["one","two","three"];
+                console.log(Array.isArray(arr));
+              };
+              isArray() 
+              
+              
+              function smothiung() {
+                let army = {
+                  minAge: 18 ,
+                  maxAge:27,
+                  chack(user){ 
+                    return user.age >= this.minAge && user.age < this.maxAge;
+                  }
+                }
+                
+                let user = [
+                  {age: 16},
+                  {age: 20},
+                  {age: 23},
+                  {age: 30}
+                ];
+                
+                let Joiney = user.filter((army.chack), army);
+                console.log(Joiney);
+              }
+              smothiung();
+              */
+
+             
+              </script>
+  </body>
+</html>
